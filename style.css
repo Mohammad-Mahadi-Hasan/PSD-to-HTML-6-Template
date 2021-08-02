@@ -1,33 +1,30 @@
 
 
 
-
-
-
-
-
 *{margin: 0;padding: 0; box-sizing: border-box;}
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
-body{font-family: 'Merriweather', serif;}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  min-width: 960px;
+  font-family: 'Merriweather', serif;
+}
+
 .fl{float:left;}
 .fr{float: right;}
 .fix{overflow: hidden;}
-.cl{clear: both;}
-h1{ font-size: 72px;color: #ffffff;}
-p{ font-size: 18px; color:#999999;}
-h2{font-size: 72px;color: #363636;}
+h1{ font-size: 48px;color: #ffffff;}
+p{ font-size: 16px; color:#999999;}
+h2{color: #363636;} 
 ul li{list-style: none;display: inline-block;}
-ul li a{text-decoration: none ; cursor: pointer;}
+ul li a{text-decoration: none ; font-size: 15px; color: white; }
 
 
-
-
-
-
-/* SIZING START HERE */
-.container{width: 1920px;margin:0 auto;}
-.structure{width: 1160px;margin:0 auto;}
-/* SIZING ENDS HERE */
+.container{
+    width:98%;
+    margin: 0 auto;
+}
 
 
 
@@ -41,13 +38,13 @@ ul li a{text-decoration: none ; cursor: pointer;}
     position: relative;  z-index: 1;
 } 
 .headersection::after{
-    content: ''; position: absolute; height:100%; width:50%; top: 40px; right: 0;
+    content: ''; position: absolute; height:100%; width:50%; top: 60px; left: 650px;
     background-image: url('images/googly-Background.png'); background-repeat: no-repeat;
     z-index:-1;
 } 
 
 .navigation {
-    padding: 60px 160px;
+    padding: 60px ;
 }
 
 .logoArea{
@@ -56,6 +53,7 @@ ul li a{text-decoration: none ; cursor: pointer;}
 
 .navMenu {
     width: 50%; padding: 5px 0px;
+    margin-left: 50px;
 }
 
 .navMenu ul{
@@ -71,7 +69,7 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 .contactUS {
-    width: 20%;  margin-right: 185px;
+    width: 25%;  
 }
 
 .Btnone{
@@ -90,7 +88,8 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 .headerHero {
- padding: 260px 0px;
+ padding: 240px 0px;
+ margin-left: 250px;
  
 }
 
@@ -99,38 +98,45 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 .HeroBg::before {
-    content: '';  position: absolute;  height: 100%;  width: 50%;  top: 89px;  right: -109px;
+    content: '';  position: absolute;  height: 60%;  width: 35%; margin-left: 830px; top: 150px;
     background-image: url(images/largehumonoidmobielimg.png); background-repeat: no-repeat;
     z-index: 2;
 }
 .HeroAreaHeading{
-    width: 45%;
+    width: 350px;
 }
 
 .HeroAreaHeading h1 {
-    color: #314584;  font-size: 74px;  margin-bottom: 50px;
+    color: #314584;  font-size: 48px;  margin-bottom: 50px;
 }
 
 .HeroAreaHeading p {
-    margin-bottom:10px; font-size: 18px;;
+    margin-bottom:10px; font-size: 16px;;
 }
 
 .heroButtons {
-    width: 100%; margin-bottom: 32px;  margin-top: 50px;
+    width: 90%; margin-bottom: 32px;  margin-top: 50px;
 }
 
 .HeroButtonone{
-    width: 16%; padding: 15px 35px; background-color: #ff3946; border-radius: 25px;
+    width: 20%; padding: 15px 35px; background-color: #ff3946; border-radius: 25px;
     text-decoration: none; color: #ffffff; margin: 0px 10px 0px 0px;  
 }
 
 .HeroButtontwo{
-    color: #314584; text-decoration: none; padding: 15px 35px; border-radius: 25px;
+    color: #314584; text-decoration: none; padding: 15px 30px; border-radius: 25px;
 }
 
 .HeroButtontwo:hover{
-    width: 15%; padding: 15px 35px; background-color: #ff3946; border-radius: 25px; text-decoration: none;
+    width: 20%; padding: 15px 30px; background-color: #ff3946; border-radius: 25px; text-decoration: none;
     color: #ffffff; margin: 0px 0px 0px 10px; transition: all .5s ease;
+}
+
+
+.headersection::after{
+clear: both; content: '';
+display: table;
+
 }
 
 /*  HEADER ENDS HERE */
@@ -144,7 +150,7 @@ ul li a{text-decoration: none ; cursor: pointer;}
 
 
 
-/* sANNYTHING START FROM HERE */
+/* ANNYTHING START FROM HERE */
 
 .annything {
     position: relative;  z-index: 1;
@@ -164,6 +170,7 @@ ul li a{text-decoration: none ; cursor: pointer;}
 
 .ServicesmainBOx{
     padding: 120px 0px;
+    margin-left: 200px;
 }
 
 .servicesHeading {
@@ -181,8 +188,8 @@ ul li a{text-decoration: none ; cursor: pointer;}
     
 }
 .serviceThatwesellcarts {
-  width: 68%;
-  padding:10px ;
+  width: 70%;
+  padding:5px ;
 }
 
 .productCart {
@@ -199,11 +206,12 @@ ul li a{text-decoration: none ; cursor: pointer;}
     line-height: 20px;
 }
 
+.ServicesmainBOx::after{
+    clear: both; content: '';
+    display: table;
+    }
+
 /* ANNYTHING ENDS HERE */
-
-
-
-
 
 
 
@@ -215,11 +223,11 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 .reserchArea {
-    width: 50%;  padding: 100px 0px 100px 260px;  position: relative; z-index: 2;
+    width: 70%;  padding: 100px 0px 100px 320px;  position: relative; z-index: 2;
 }
 
 .reserchArea::before{
-    content: ''; position: absolute;  height: 100%;  width: 109%;  top: 113px;  right: 400px;
+    content: ''; position: absolute;  height: 100%;  width: 109%;  top: 113px; right: 100px; 
     background-image: url(images/desktopimg.png); background-repeat: no-repeat;
     z-index: -1;
 }
@@ -256,7 +264,8 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 .worksectiondiv{
-    padding: 150px 0px;
+    padding: 80px 0px;
+    margin-left: 200px;
 }
 
 .worksectionHeading{
@@ -268,7 +277,7 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 .mainHeading h1{
-     color: #314584;   font-size: 49px;
+     color: #314584;   font-size: 42px;
 }
 
 .headinArrow{
@@ -297,7 +306,12 @@ ul li a{text-decoration: none ; cursor: pointer;}
 .seemoreForSLider a:hover{
     color: black;
 }
-            
+        
+.worksection::after{
+    clear: both;
+    content: '';
+    display: table;
+}
 /*  WORK ENDS HERE  */
 
 
@@ -316,7 +330,7 @@ ul li a{text-decoration: none ; cursor: pointer;}
 } 
 
 .onecobineArea::before{
-    content: "";  position: absolute;  height: 120%;  width: 22%;  top: 141px;  left: 1493px;
+    content: "";  position: absolute;  height: 120%;  width: 22%;  top: 141px; left: 1000px;
     background-image: url(images/forthrightgooglebg.png); background-repeat: no-repeat;
     z-index: -1; 
 } 
@@ -329,20 +343,23 @@ ul li a{text-decoration: none ; cursor: pointer;}
     margin-left: 22px;
 }
 
+.ourNewsDIvn{
+    margin-left: 200px;
+}
 .ourNewsHeading a  {
     text-decoration: none;  color:#ff3946  ;  font-size: 18px;  font-weight: 500;
 }
 
 .ourNewsHeading h1 a{
-    color: #314584;  font-size: 49px; font-weight: 800;
+    color: #314584;  font-size: 45px; font-weight: 800;
 }
 
 .newsCarts{
-    padding: 75px 0px;
+    padding: 60px 0px;
 }
 
 .newsminicart{
-    padding: 55px 30px;  width: 31%;  margin-right: 1%;  margin-left: 1%;  
+    padding: 30px 30px;  width: 25%;  margin-right: 1%;  margin-left: 1%;  
     box-shadow: 2px 2px 2px #e2e5e5; background-color: #ffffff;
 }
 
@@ -405,22 +422,24 @@ ul li a{text-decoration: none ; cursor: pointer;}
 
 .contactusdivMain{
     padding: 100px 0px;
+    padding-left: 200px;
 }
 
 .contactusdiv a { 
-    text-decoration: none;  color: #ff3946;  font-size :18px;  font-weight: 600;  padding-left: 25px;
+    text-decoration: none;  color: #ff3946;  font-size :16px;  font-weight: 600;  padding-left: 25px;
 }
 
 .contactusdiv h1 a {
-    text-decoration: none; color: #314584; font-size: 49px;
+    text-decoration: none; color: #314584; font-size: 45px;
 }
 
 .formArea {
     margin-bottom: 35px; padding-left: 20px;
+    margin-top: 20px;
 }
 
 .formArea [type="text"]{
-    width: 47%;  margin-left: 1%;  margin-right: 1%; background-color:#f4fafe ; border: none;
+    width: 35%;  margin-left: 1%;  margin-right: 1%; background-color:#f4fafe ; border: none;
    padding: 25px 20px; color: #314584; font-size: 18px;
 }
 
@@ -429,12 +448,12 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 #mbox {
-    width: 96.3%;  margin-left: 1%;  color: #314584;  background-color:#f4fafe ;  padding: 25px 20px;
+    width: 73%;  margin-left: 1%;  color: #314584;  background-color:#f4fafe ;  padding: 25px 20px;
     border: none;  font-size: 18px;
 }
 
 .sentconfirmetion{
-   width: 100%; padding-left: 43%; margin-top: 55px;
+   width: 100%; padding-left: 30%; margin-top: 55px;
 }
 
 .sentconfirmetion a{
@@ -459,14 +478,15 @@ ul li a{text-decoration: none ; cursor: pointer;}
 
 .footerdivArea {
     text-align: center;
-    padding:70px 0px;
+    padding:30px 0px;
 }
 
 .footerdiv{
     margin-bottom: 20px;
 }
+
 .footerdiv h1{
-    font-size: 49px; color: #ff3946;
+    font-size: 45px; color: #ff3946;
 }
 
 .footerdivArea p {
@@ -499,3 +519,7 @@ ul li a{text-decoration: none ; cursor: pointer;}
 }
 
 /* FOOTER ENDS HERE */
+
+
+
+
